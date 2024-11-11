@@ -140,14 +140,11 @@ class MultiAssetTradingBot:
                     )
                     self.logger.info(f"Close position response for {symbol}: {response}")
                     time.sleep(0.1)  # 短暂延迟后再试
-                    # 检查返回值
-                    if response.get('status') == 'filled':
+                    # 检查平仓结果
+                    if response.get('code') == '0':  # 确认成功状态
                         self.logger.info(f"Successfully closed position for {symbol}, side: {side}, amount: {amount}")
-                        self.send_feishu_notification(f"Successfully closed position for {symbol}, side: {side}, amount: {amount}")
-                    elif response.get('status') == 'partially_filled':
-                        remaining_amount = amount - response.get('filled', 0)
-                        self.logger.warning(f"Partially closed position for {symbol}. Remaining amount: {remaining_amount}")
-                        self.send_feishu_notification(f"Partially closed position for {symbol}. Remaining amount: {remaining_amount}")
+                        self.send_feishu_notification(
+                            f"Successfully closed position for {symbol}, side: {side}, amount: {amount}")
                     else:
                         self.logger.error(f"Failed to close position for {symbol}: {response}")
                         self.send_feishu_notification(f"Failed to close position for {symbol}: {response}")
