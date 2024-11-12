@@ -38,7 +38,8 @@ bitget交易所需设置**双向持仓**
 - **20241105**: 修复bitget因为ccxt版本过高导致的bug。
 - **20241105**: 更新后支持okx的策略信号监控了 (https://youtu.be/ugyQDrIw8-I)
 - **20241106**: okx不再区分单向持仓还是双向，都支持了
-- **20241108**: okx bitget 支持浮盈加仓了(https://youtu.be/GOYzgskAjvs) 
+- **20241108**: okx bitget 支持浮盈加仓了 (https://youtu.be/GOYzgskAjvs) 
+- **20241112**: okx 新增全仓统一监控 (https://www.youtube.com/watch?v=99mCa_UiHiE) 
 
 ### 配置说明
 
