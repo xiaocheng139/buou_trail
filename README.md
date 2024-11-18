@@ -55,7 +55,7 @@ bitget交易所需设置**双向持仓**
 - **higher_trail_stop_loss_pct**: 第二档移动止盈回撤百分比，表示在第二档移动止盈时允许的最大回撤百分比，例如 0.25 表示 25% 回撤固定平仓。
 - **low_trail_profit_threshold**: 低档保护止盈触发阈值，表示达到该盈利百分比时进入低档保护止盈，例如 0.4 表示开仓价 0.4% 时触发。
 - **first_trail_profit_threshold**: 第一档移动止盈触发阈值，表示达到该盈利百分比时进入第一档移动止盈，例如 1.0 表示开仓价 1% 时触发。
-- **second_trail_profit_threshold**: 第二档移动止盈触发阈值，表示达到该盈利百分比时进入第二档移动止盈，例如 3.0 表示开仓价 1% 时触发。
+- **second_trail_profit_threshold**: 第二档移动止盈触发阈值，表示达到该盈利百分比时进入第二档移动止盈，例如 3.0 表示开仓价 3% 时触发。
 - **blacklist**: 黑名单列表，包含不需要监控的交易对，例如 ["ETH/USDT:USDT"]。
 
 #### OKX 配置
@@ -70,7 +70,7 @@ bitget交易所需设置**双向持仓**
 - **higher_trail_stop_loss_pct**: 第二档移动止盈回撤百分比，表示在第二档移动止盈时允许的最大回撤百分比，例如 0.25 表示 25% 回撤固定平仓。
 - **low_trail_profit_threshold**: 低档保护止盈触发阈值，表示达到该盈利百分比时进入低档保护止盈，例如 0.4 表示开仓价 0.4% 时触发。
 - **first_trail_profit_threshold**: 第一档移动止盈触发阈值，表示达到该盈利百分比时进入第一档移动止盈，例如 1.0 表示开仓价 1% 时触发。
-- **second_trail_profit_threshold**: 第二档移动止盈触发阈值，表示达到该盈利百分比时进入第二档移动止盈，例如 3.0 表示开仓价 1% 时触发。
+- **second_trail_profit_threshold**: 第二档移动止盈触发阈值，表示达到该盈利百分比时进入第二档移动止盈，例如 3.0 表示开仓价 3% 时触发。
 - **blacklist**: 黑名单列表，包含不需要监控的交易对，例如 ["ETH-USDT-SWAP"]。
 
 #### BITGET 配置
@@ -85,7 +85,7 @@ bitget交易所需设置**双向持仓**
 - **higher_trail_stop_loss_pct**: 第二档移动止盈回撤百分比，表示在第二档移动止盈时允许的最大回撤百分比，例如 0.25 表示 25% 回撤固定平仓。
 - **low_trail_profit_threshold**: 低档保护止盈触发阈值，表示达到该盈利百分比时进入低档保护止盈，例如 0.4 表示开仓价 0.4% 时触发。
 - **first_trail_profit_threshold**: 第一档移动止盈触发阈值，表示达到该盈利百分比时进入第一档移动止盈，例如 1.0 表示开仓价 1% 时触发。
-- **second_trail_profit_threshold**: 第二档移动止盈触发阈值，表示达到该盈利百分比时进入第二档移动止盈，例如 3.0 表示开仓价 1% 时触发。
+- **second_trail_profit_threshold**: 第二档移动止盈触发阈值，表示达到该盈利百分比时进入第二档移动止盈，例如 3.0 表示开仓价 3% 时触发。
 - **blacklist**: 黑名单列表，包含不需要监控的交易对，例如 ["ETH-USDT-SWAP"]。
 
 ##### 飞书 Webhook
@@ -96,3 +96,4 @@ bitget交易所需设置**双向持仓**
 
 - **monitor_interval**: 监控循环的时间间隔（以秒为单位），默认为 4 秒。
 
+打赏地址trc20: TUunBuqQ1ZDYt9WrA3ZarndFPQgefXqZAM
