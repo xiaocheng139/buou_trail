@@ -179,10 +179,10 @@ class MultiAssetTradingBot:
                 # 检查仓位总规模变化
                 current_position_size = sum(abs(float(position['contracts'])) for position in self.fetch_positions())
                 if current_position_size > previous_position_size:
-                    self.notifier.send_notification(f"检测到仓位变化操作，重置最高盈利和档位状态")
-                    self.logger.info("检测到加仓操作，重置最高盈利和档位状态")
+                    self.logger.info("检测到新增仓位操作，重置最高盈利和档位状态")
                     self.reset_highest_profit_and_tier()
                     previous_position_size = current_position_size
+                    continue  # 跳过本次循环
 
                 total_profit = self.calculate_average_profit()
                 self.logger.info(f"当前总盈利: {total_profit:.2f}%")
