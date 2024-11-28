@@ -1,9 +1,16 @@
 import json
 from chua_ok_all import MultiAssetTradingBot
 from notifier import Notifier
+import sys
 
 if __name__ == '__main__':
-    with open('config.json', 'r') as f:
+    if len(sys.argv) != 2:
+        print("Usage: python main.py <config_file>")
+        sys.exit(1)
+
+    config_file = sys.argv[1]
+
+    with open(config_file, 'r') as f:
         config_data = json.load(f)
 
     platform_config = config_data['okx']
